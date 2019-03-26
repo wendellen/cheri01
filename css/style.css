@@ -1,0 +1,131 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+body {
+  filter: invert(100%);
+}
+
+/* INVERT WHOLE PAGE ON HOVER */
+
+body:hover {
+  filter: invert(0%);
+}
+
+/* INVERT WHOLE PAGE AGAIN ON CLICK */
+
+html:active {
+  filter: invert(100%);
+}
+
+/* MAIN */
+
+.main {
+	top: 0;
+  left: 0;
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Pattaya', sans-serif;
+  font-size: 15vh;
+  text-align: center;
+  opacity: 0.7;
+  line-height: 85%;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+}
+
+.shop:hover span {
+  display: none;
+}
+
+.shop:hover:before {
+  content: "Shop";
+  color: #FF69B4;
+}
+
+.faq:hover span{
+  display: none;
+}
+
+.faq:hover:before {
+  content: "FAQ";
+  color: #FF69B4;
+}
+
+.blog:hover span{
+  display: none;
+}
+
+.blog:hover:before {
+  content: "Blog";
+  color: #FF69B4;
+}
+
+.about:hover span{
+  display: none;
+}
+
+.about:hover:before {
+  content: "About";
+  color: #FF69B4;
+}
+
+.contact:hover span{
+  display: none;
+}
+
+.contact:hover:before {
+  content: "Contact";
+  color: #FF69B4;
+}
+
+/* MAIN INVERT SCROLL */
+
+/* .two {
+  display: grid;
+  align-items: left;
+  justify-content: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+} */
+
+/* #d1 {
+  background-color: white;
+  position: fixed;
+}
+
+#d2 {
+  background: linear-gradient(black 50%, white 50%);
+  position: fixed;
+}
+
+#d3 {
+  mix-blend-mode: difference;
+  overflow-y: scroll;
+  position: relative;
+} */
